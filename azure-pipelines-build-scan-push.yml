@@ -44,7 +44,7 @@ stages:
 
     - task: Docker@2
       inputs:
-        containerRegistry: 'Docker hub'
+        containerRegistry: 'Docker Hub Connection'
         repository: '$(imageName)'
         command: 'push'
         tags: '$(tag)'
